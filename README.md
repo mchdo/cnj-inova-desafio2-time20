@@ -60,7 +60,7 @@ Diversos tipos de regras foram criadas:
  
 As regras definidas demonstram a flexibilidade para a criação de diversos tipos de requisitos de qualidade, além disso, explorarmos algumas possibilidades de análises com os dados retornados pelo MarvinJud. 
 
-No caso de uso, todos os eventos gerados pelo MarvinJud foram enviadas para um indíce no Elastic e também foi construída uma "base de métricas" de qualidade por processo recebido. Essa base de métricas foi gravada no banco de dados PostgreSQL com o nome de **bd_marvinjud.registro_validacao**. Em cima desses dados, foi gerado o [Dashboard Painel de Qualidade](caso_de_uso/painel_qualidade).
+No caso de uso, todos os eventos gerados pelo MarvinJud foram enviadas para um indíce no Elastic e também foi construída uma "base de métricas" de qualidade por processo recebido. Essa base de métricas foi gravada no banco de dados PostgreSQL com o nome de **bd_marvinjud.registro_validacao**. Em cima desses dados, foi gerado o [Dashboard Painel de Qualidade](/caso_de_uso/painel-qualidade).
 
 
 ### [Painel de Qualidade](caso_de_uso/painel-qualidade)
