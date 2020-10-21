@@ -44,6 +44,7 @@ Interface web construída em [Shiny](https://shiny.rstudio.com/) para administra
 ### [engine](/produto/engine/) - Mecanismo de processamento dos dados do DataJud
 Componente de "orquestração" entre os requisitos de qualidade definidos, o processamento das regras pelo **validate** e a instrumentação dos resultados. Também é responsável por retornar os logs detalhados de cada validaçao, o nome dos atributos, registros e  valores que geraram cada  inconformidade detectada no processamento.
 
+
 ### Fontes para cruzamento
 São fontes de dados externas ao DataJud que podem ser utilizadas para o cruzamento dos registros. Estão disponíveis para criação de requisitos de qualidade todas as tabelas do banco de dados **[sgt_consulta] (https://www.cnj.jus.br/sgt/versoes.php)**, além das informações de serventias do arquivo **mpm_serventias.csv**.
 
@@ -52,7 +53,7 @@ São fontes de dados externas ao DataJud que podem ser utilizadas para o cruzame
 ## Caso de Uso: Processamento dos arquivos do desafio
 
 Os 631 arquivos JSON do desafio foram tratados pela [rotina de processamento](caso_de_uso/processa-json-desafio).
-Os 2.994.450 registros de processos foram avaliados para atenderem a um conjunto de [20 requisitos de qualidade](link_regras). 
+Os 2.994.450 registros de processos foram avaliados para atenderem a um conjunto de [20 requisitos de qualidade]. 
 
 Diversos tipos de regras foram criadas:
 
