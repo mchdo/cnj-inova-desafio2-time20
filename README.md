@@ -39,6 +39,8 @@ O MarvinJud é agnóstico em relação a origem dos dados. A interface do Marvin
 ### [admin](/produto/admin/) - Interface de administração dos requisitos de qualidade
 Interface web construída em [Shiny](https://shiny.rstudio.com/) para administração dos requisitos de qualidade dos dados.
 
+![Tela do admin](docs/tela_admin.png "Tela do admin")
+
 ### [engine](/produto/engine/) - Mecanismo de processamento dos dados do DataJud
 Componente de "orquestração" entre os requisitos de qualidade definidos, o processamento das regras pelo **validate** e a instrumentação dos resultados. Também é responsável por retornar os logs detalhados de cada validaçao, o nome dos atributos, registros e  valores que geraram cada  inconformidade detectada no processamento.
 
