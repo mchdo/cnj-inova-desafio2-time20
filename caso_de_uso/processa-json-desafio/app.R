@@ -69,7 +69,7 @@ connDB <- dbPool(PostgreSQL(),
                      password =  db_pass) # senha concedida ao usuário apontado acima
 
 # Cria a conexao ao Elastic
-connELK <- elastic::connect(host = elk_endpoint, path = elk_path, port = elk_port, transport_schema  = elk_transport)
+connELK <- elastic::connect(host = elk_endpoint, path = elk_path, port = elk_port, user=elk_user, pwd=elk_pass, transport_schema  = elk_transport)
 
 # Formatacao do log de processamento
 msg_processamento <- function(msg) {
@@ -142,7 +142,7 @@ processa_arquivos_desafio <- function() {
 
 # Envia  todos os registros de processamento para o Elastic
 envia_log_elastic <- function(dados, erros){
-  docs_bulk(connELK, erros, index="validacoesMarvinJud")
+  elastic::docs_bulk(connELK, erros, "erros", "validacoesMarvinJud")
 }
 
 # Grava os logs de processamento em arquivos JSON
