@@ -40,7 +40,7 @@ O MarvinJud é agnóstico em relação a origem dos dados. A interface do Marvin
 Interface web construída em [Shiny](https://shiny.rstudio.com/) para administração dos requisitos de qualidade dos dados.
 
 ### [engine](/produto/engine/) - Mecanismo de processamento dos dados do DataJud
-Componente de "orquestração" entre os requisitos de qualidade definidos, o processamento das regras pelo **validate** e a instrumentação dos resultados. Também é responsável por retornar os logs detalhados de cada validação, o nome dos atributos, registros e  valores que geraram cada  inconformidade detectada no processamento.
+Componente de "orquestração" entre os requisitos de qualidade definidos, o processamento das regras pelo **validate** e a instrumentação dos resultados. Também é responsável por retornar os logs detalhados de cada validaçao, o nome dos atributos, registros e  valores que geraram cada  inconformidade detectada no processamento.
 
 ### Fontes para cruzamento
 São fontes de dados externas ao DataJud que podem ser utilizadas para o cruzamento dos registros. Estão disponíveis para criação de requisitos de qualidade todas as tabelas do banco de dados **[sgt_consulta] (https://www.cnj.jus.br/sgt/versoes.php)**, além das informações de serventias do arquivo **mpm_serventias.csv**.
@@ -86,7 +86,7 @@ Todas os projetos utilizaram o  [pacote renv](https://rstudio.github.io/renv/art
 
 ### Para rodar o projeto:
 Todas as ferramentas e bibliotecas utilizadas para rodar o projeto são softwares de código livre.
-Todas as imagens docker foram construidas com bases em imagens oficiais disponíveis no **[dockerhub](https://hub.docker.com/)**.
+Todas as imagens docker foram construidas com bases me imagens oficiais disponíveis no **[dockerhub](https://hub.docker.com/)**.
 Todos os pacotes R utilizados na solução estão disponíveis no repositório público **[CRAN] (https://cran.r-project.org/web/packages/available_packages_by_name.html)**:
 Detalhes do tipo licenças utlizadas pelos principais componentes da solução estão no arguivo **[Licenças] (/licenças/README.md)**:
 	
