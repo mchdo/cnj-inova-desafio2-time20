@@ -94,7 +94,7 @@ Detalhes do tipo licenças utlizadas pelos principais componentes da solução e
 
 No Painel de Qualidade foi utilizada a [API de geolocalização](https://developers.google.com/maps/documentation/geocoding/overview) do Google Maps para a extração da localização exata das serventias e geração do [arquivo geo_serventias.csv](dados/geo_serventias.csv) devido a pouca precisão dos atributos **LATITUDE** e **LONGITUDE** já presentes na tabela "mpm_serventias".
 
-No [script de georeferenciamento das serventias](caso_de_uso/painel-qualidade/utilitarios/extrator_geo_serventias.R)  a chave da API foi alterada no código fonte para uma valor inválido, para evitar o seu vazamento no repositório público.
+No [script de georeferenciamento das serventias](caso_de_uso/painel-qualidade/utilitarios/extrator_geo_serventias/extrator_geo_serventias.R)  a chave da API foi alterada no código fonte para uma valor inválido, para evitar o seu vazamento no repositório público.
 
 Foi possível fazer todas as chamadas de APIs para os 39.100 orgãos julgadores com o nível gratuíto do serviço Google Maps (Até 200 USD mensais).	
 
