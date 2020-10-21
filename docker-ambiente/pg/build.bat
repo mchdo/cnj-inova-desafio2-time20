@@ -1,0 +1,1 @@
+docker build . --tag=marvinjud-pg:12.4

@@ -1,0 +1,1 @@
+docker build . -t marvinjud-processa-json:0.0.1
