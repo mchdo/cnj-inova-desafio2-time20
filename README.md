@@ -19,7 +19,7 @@ O MarvinJud é uma solução para identificação e tratamento das inconsistênc
 
 O pacote **validate** permite a definição sistemática dos requisitos de qualidade e pode ser utilizada por algoritmos de correção de dados, que são parametrizados pelas regras de validação. Detalhes da implementação do pacote **validate** estão disponíveis **[nesse artigo] (https://cran.r-project.org/web/packages/validate/vignettes/JSS_3483.pdf)** publicado  no **[Journal of Systems and Software] (https://arxiv.org/abs/1912.09759)**. O **validate** é um projeto de código aberto disponível no [Github](https://github.com/data-cleaning/validate).
  
-Também desenvolvemos uma arquitetura de **[plugins] (produto/engine/plugins)**  que permite utilizar **[pacotes R] (https://cran.r-project.org/web/packages/available_packages_by_name.html)** em funções de validação para os requisitos de qualidade dos dados. Foram construídos plugins para algumas funções dos seguintes pacotes:
+Também desenvolvemos uma arquitetura de **[plugins] (/produto/engine/plugins)**  que permite utilizar **[pacotes R] (https://cran.r-project.org/web/packages/available_packages_by_name.html)** em funções de validação para os requisitos de qualidade dos dados. Foram construídos plugins para algumas funções dos seguintes pacotes:
 
 **[Pacote abjutils](https://cran.r-project.org/package=abjutils)** :: Pacote da   **[Associação Brasileira de Jurimetria] (https://abj.org.br/)** que implementa ferramentas de uso geral utilizadas pela ABJ, como funções de amostragem e manipulação básica do número de identificação de ações judiciais brasileiras. Também implementa algumas funções para limpeza de textos.
 
@@ -36,10 +36,10 @@ Na figura abaixo apresentamos um desenho da solução  construída:
 ### Dados do Datajud
 O MarvinJud é agnóstico em relação a origem dos dados. A interface do MarvinJud com o DataJud utiliza as estruturas de Data Frames do R. Os dados podem ser carregados de qualquer fonte que tenha algum pacote de conectividade com o R disponível, eles podem vir de arquivos JSON, arquivos XML, bases de dados relacionais ou NoSQL.
 
-### [admin](produto/admin/) - Interface de administração dos requisitos de qualidade
+### [admin](/produto/admin/) - Interface de administração dos requisitos de qualidade
 Interface web construída em [Shiny](https://shiny.rstudio.com/) para administração dos requisitos de qualidade dos dados.
 
-### [engine](produto/engine/) - Mecanismo de processamento dos dados do DataJud
+### [engine](/produto/engine/) - Mecanismo de processamento dos dados do DataJud
 Componente de "orquestração" entre os requisitos de qualidade definidos, o processamento das regras pelo **validate** e a instrumentação dos resultados. Também é responsável por retornar os logs detalhados de cada validaçao, o nome dos atributos, registros e  valores que geraram cada  inconformidade detectada no processamento.
 
 ### Fontes para cruzamento
@@ -63,7 +63,7 @@ As regras definidas demonstram a flexibilidade para a criação de diversos tipo
 No caso de uso, todos os eventos gerados pelo MarvinJud foram enviadas para um indíce no Elastic e também foi construída uma "base de métricas" de qualidade por processo recebido. Essa base de métricas foi gravada no banco de dados PostgreSQL com o nome de **bd_marvinjud.registro_validacao**. Em cima desses dados, foi gerado o [Dashboard Painel de Qualidade](/caso_de_uso/painel-qualidade).
 
 
-### [Painel de Qualidade](caso_de_uso/painel-qualidade)
+### [Painel de Qualidade](/caso_de_uso/painel-qualidade)
 Dashboard construído utilizando  [Shiny](https://shiny.rstudio.com/) para visualização das métricas de processamento dos arquivos do desafio. Para uma melhor performance, as consultas desse painel são geradas através de consultas as views materializadas no PostgreSQL **bd_marvinjud.vmw_validacao_ano** e **bd_marvinjud.vwm_validacao_orgao**. Essas views são atualizadas automaticamente durante [rotina de processamento](caso_de_uso/processa-json-desafio).
 
 Na figura abaixo apresentamos um desenho da solução  construída:
@@ -94,7 +94,7 @@ Detalhes do tipo licenças utlizadas pelos principais componentes da solução e
 
 No Painel de Qualidade foi utilizada a [API de geolocalização](https://developers.google.com/maps/documentation/geocoding/overview) do Google Maps para a extração da localização exata das serventias e geração do [arquivo geo_serventias.csv](dados/geo_serventias.csv) devido a pouca precisão dos atributos **LATITUDE** e **LONGITUDE** já presentes na tabela "mpm_serventias".
 
-No [script de georeferenciamento das serventias](caso_de_uso/painel-qualidade/utilitarios/extrator_geo_serventias/extrator_geo_serventias.R)  a chave da API foi alterada no código fonte para uma valor inválido, para evitar o seu vazamento no repositório público.
+No [script de georeferenciamento das serventias](/caso_de_uso/painel-qualidade/utilitarios/extrator_geo_serventias/extrator_geo_serventias.R)  a chave da API foi alterada no código fonte para uma valor inválido, para evitar o seu vazamento no repositório público.
 
 Foi possível fazer todas as chamadas de APIs para os 39.100 orgãos julgadores com o nível gratuíto do serviço Google Maps (Até 200 USD mensais).	
 
