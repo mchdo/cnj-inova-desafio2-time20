@@ -17,15 +17,15 @@ A solução desenvolvida traz uma resposta ao desafio proposto, já que garante 
 
 O MarvinJud é uma solução para identificação e tratamento das inconsistências nos dados do DataJud, que estende as funcionalidades e infraestrutura oferecidas pelo [pacote R validate](https://cran.r-project.org/web/packages/validate/index.html).
 
-O pacote **validate** permite a definição sistemática dos requisitos de qualidade e pode ser utilizada por algoritmos de correção de dados, que são parametrizados pelas regras de validação. Detalhes da implementação do pacote **validate** estão disponíveis **[nesse artigo] (https://cran.r-project.org/web/packages/validate/vignettes/JSS_3483.pdf)** publicado  no **[Journal of Systems and Software] (https://arxiv.org/abs/1912.09759)**. O **validate** é um projeto de código aberto disponível no [Github](https://github.com/data-cleaning/validate).
+O pacote **validate** permite a definição sistemática dos requisitos de qualidade e pode ser utilizada por algoritmos de correção de dados, que são parametrizados pelas regras de validação. Detalhes da implementação do pacote **validate** estão disponíveis **[nesse artigo](https://cran.r-project.org/web/packages/validate/vignettes/JSS_3483.pdf)** publicado  no **[Journal of Systems and Software](https://arxiv.org/abs/1912.09759)**. O **validate** é um projeto de código aberto disponível no [Github](https://github.com/data-cleaning/validate).
  
-Também desenvolvemos uma arquitetura de **[plugins] (/produto/engine/plugins)**  que permite utilizar **[pacotes R] (https://cran.r-project.org/web/packages/available_packages_by_name.html)** em funções de validação para os requisitos de qualidade dos dados. Foram construídos plugins para algumas funções dos seguintes pacotes:
+Também desenvolvemos uma arquitetura de **[plugins](/produto/engine/plugins)**  que permite utilizar **[pacotes R](https://cran.r-project.org/web/packages/available_packages_by_name.html)** em funções de validação para os requisitos de qualidade dos dados. Foram construídos plugins para algumas funções dos seguintes pacotes:
 
-**[Pacote abjutils](https://cran.r-project.org/package=abjutils)** :: Pacote da   **[Associação Brasileira de Jurimetria] (https://abj.org.br/)** que implementa ferramentas de uso geral utilizadas pela ABJ, como funções de amostragem e manipulação básica do número de identificação de ações judiciais brasileiras. Também implementa algumas funções para limpeza de textos.
+**[Pacote abjutils](https://cran.r-project.org/package=abjutils)** :: Pacote da   **[Associação Brasileira de Jurimetria](https://abj.org.br/)** que implementa ferramentas de uso geral utilizadas pela ABJ, como funções de amostragem e manipulação básica do número de identificação de ações judiciais brasileiras. Também implementa algumas funções para limpeza de textos.
 
 **[Pacote caret](https://cran.r-project.org/web/packages/caret/index.html)** :: Pacote para trabalhar com modelos de regressão e classificação.
 
-**[Pacote tfdleploy](https://cran.r-project.org/web/packages/tfdeploy/index.html)** :: Pacote para implantação de modelos de aprendizado de máquina desenvolvidos com o **[TensorFlow] (https://www.tensorflow.org/?hl=pt-br)**
+**[Pacote tfdleploy](https://cran.r-project.org/web/packages/tfdeploy/index.html)** :: Pacote para implantação de modelos de aprendizado de máquina desenvolvidos com o **[TensorFlow](https://www.tensorflow.org/?hl=pt-br)**
 
 Na figura abaixo apresentamos um desenho da solução  construída:
 
@@ -45,7 +45,7 @@ Interface web construída em [Shiny](https://shiny.rstudio.com/) para administra
 Componente de "orquestração" entre os requisitos de qualidade definidos, o processamento das regras pelo **validate** e a instrumentação dos resultados. Também é responsável por retornar os logs detalhados de cada validaçao, o nome dos atributos, registros e  valores que geraram cada  inconformidade detectada no processamento.
 
 ### Fontes para cruzamento
-São fontes de dados externas ao DataJud que podem ser utilizadas para o cruzamento dos registros. Estão disponíveis para criação de requisitos de qualidade todas as tabelas do banco de dados **[sgt_consulta] (https://www.cnj.jus.br/sgt/versoes.php)**, além das informações de serventias do arquivo **mpm_serventias.csv**.
+São fontes de dados externas ao DataJud que podem ser utilizadas para o cruzamento dos registros. Estão disponíveis para criação de requisitos de qualidade todas as tabelas do banco de dados **[sgt_consulta](https://www.cnj.jus.br/sgt/versoes.php)**, além das informações de serventias do arquivo **mpm_serventias.csv**.
 
 
 
@@ -91,8 +91,8 @@ Todas os projetos utilizaram o  [pacote renv](https://rstudio.github.io/renv/art
 ### Para rodar o projeto:
 Todas as ferramentas e bibliotecas utilizadas para rodar o projeto são softwares de código livre.
 Todas as imagens docker foram construidas com bases me imagens oficiais disponíveis no **[dockerhub](https://hub.docker.com/)**.
-Todos os pacotes R utilizados na solução estão disponíveis no repositório público **[CRAN] (https://cran.r-project.org/web/packages/available_packages_by_name.html)**:
-Detalhes do tipo licenças utlizadas pelos principais componentes da solução estão no arguivo **[Licenças] (/licenças/README.md)**:
+Todos os pacotes R utilizados na solução estão disponíveis no repositório público **[CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html)**:
+Detalhes do tipo licenças utlizadas pelos principais componentes da solução estão no arguivo **[Licenças](/licenças/README.md)**:
 	
 ### Para a geração de dados no Painel de Qualidade:
 
