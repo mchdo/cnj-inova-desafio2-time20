@@ -66,6 +66,8 @@ No caso de uso, todos os eventos gerados pelo MarvinJud foram enviadas para um i
 ### [Painel de Qualidade](/caso_de_uso/painel-qualidade)
 Dashboard construído utilizando  [Shiny](https://shiny.rstudio.com/) para visualização das métricas de processamento dos arquivos do desafio. Para uma melhor performance, as consultas desse painel são geradas através de consultas as views materializadas no PostgreSQL **bd_marvinjud.vmw_validacao_ano** e **bd_marvinjud.vwm_validacao_orgao**. Essas views são atualizadas automaticamente durante [rotina de processamento](caso_de_uso/processa-json-desafio).
 
+![Painel de Qualidade](docs/painel_qualidade.png "Painel da Qualidade")
+
 Na figura abaixo apresentamos um desenho da solução  construída:
 
 
