@@ -2,8 +2,6 @@
 
 ## Repositório do time 20  no Hackathon CNJ - Desafio Inconsistência de dados nos sistemas dos tribunais (Desafio 2)
 
-### MarvinJud :: Mecanismo Automático de Reconhecimento e Validação Inteligente Nos dados do Judiciário
-
 
 ## Proposta
 
