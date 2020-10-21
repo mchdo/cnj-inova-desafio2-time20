@@ -14,7 +14,7 @@ if(DEV) {
   Sys.setenv(MARVINJUD_DB_NAME="bd_marvinjud")
   Sys.setenv(MARVINJUD_DB_USER="postgres")
   Sys.setenv(MARVINJUD_DB_PASS="postgres")
-  Sys.setenv(MARVINJUD_DIR_BASE="F:/ProjetosPessoais/CNJ/cnj-inova-desafio2-time20/models")
+  Sys.setenv(MARVINJUD_DIR_BASE="F:/ProjetosPessoais/CNJ/cnj-inova-desafio2-time20")
   
 }
 db_host <- Sys.getenv("MARVINJUD_DB_HOST")
