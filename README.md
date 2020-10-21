@@ -6,7 +6,7 @@
 
 
 ## Proposta
-==========================================================================================
+
 O CNJ instituiu a Base Nacional de Dados do Poder Judiciário – DataJud como fonte primária de dados do Sistema de Estatística do Poder Judiciário – SIESP. Os dados do DataJud são usados para estudos e diagnósticos, permitindo-se o aprimoramento da gestão e prestação jurisdicional pelos tribunais.
 
 Propomos uma solução tecnológica flexível que permite ao CNJ definir os requisitos de qualidade  e os tratamentos desejados nos dados enviados pelos tribunais. A solução permite ao CNJ verificar a integridade, exatidão, consistência e validade dos dados. 
@@ -16,7 +16,7 @@ A solução desenvolvida traz uma resposta ao desafio proposto, já que garante 
 
 
 ## Visão Geral da Solução
-==========================================================================================
+
 O MarvinJud é uma solução para identificação e tratamento das inconsistências nos dados do DataJud, que estende as funcionalidades e infraestrutura oferecidas pelo [pacote R validate](https://cran.r-project.org/web/packages/validate/index.html).
 
 O pacote **validate** permite a definição sistemática dos requisitos de qualidade e pode ser utilizada por algoritmos de correção de dados, que são parametrizados pelas regras de validação. Detalhes da implementação do pacote **validate** estão disponíveis **[nesse artigo] (https://cran.r-project.org/web/packages/validate/vignettes/JSS_3483.pdf)** publicado  no **[Journal of Systems and Software] (https://arxiv.org/abs/1912.09759)**. O **validate** é um projeto de código aberto disponível no [Github](https://github.com/data-cleaning/validate).
@@ -50,7 +50,6 @@ São fontes de dados externas ao DataJud que podem ser utilizadas para o cruzame
 
 
 ## Caso de Uso: Processamento dos arquivos do desafio
-=================================================================================================================
 
 Os 631 arquivos JSON do desafio foram tratados pela [rotina de processamento](caso_de_uso/processa-json-desafio).
 Os 2.994.450 registros de processos foram avaliados para atenderem a um conjunto de [20 requisitos de qualidade](link_regras). 
@@ -75,7 +74,7 @@ Na figura abaixo apresentamos um desenho da solução  construída:
 ![Visão geral da arquiteteura](docs/visao_geral_arquivos_desafio.png "Arquitetura do processamento")
 
 ## Como rodar o projeto
-==========================================================================================
+
 
 ### Nas IDE de desenvolvimentos
 
@@ -85,7 +84,7 @@ Todas os projetos utilizaram o  [pacote renv](https://rstudio.github.io/renv/art
 
 
 ## Guia de licenças
-==========================================================================================
+
 
 ### Para rodar o projeto:
 Todas as ferramentas e bibliotecas utilizadas para rodar o projeto são softwares de código livre.
