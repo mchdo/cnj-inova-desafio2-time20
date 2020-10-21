@@ -88,7 +88,7 @@ Todas os projetos utilizaram o  [pacote renv](https://rstudio.github.io/renv/art
 Todas as ferramentas e bibliotecas utilizadas para rodar o projeto são softwares de código livre.
 Todas as imagens docker foram construidas com bases me imagens oficiais disponíveis no **[dockerhub](https://hub.docker.com/)**.
 Todos os pacotes R utilizados na solução estão disponíveis no repositório público **[CRAN] (https://cran.r-project.org/web/packages/available_packages_by_name.html)**:
-Detalhes do tipo licenças utlizadas pelos principais componentes da solução estão no arguivo **[Licenças] (licenças/README.md)**:
+Detalhes do tipo licenças utlizadas pelos principais componentes da solução estão no arguivo **[Licenças] (/licenças/README.md)**:
 	
 ### Para a geração de dados no Painel de Qualidade:
 
